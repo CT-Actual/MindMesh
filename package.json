@@ -1,0 +1,16 @@
+{
+  "name": "mindmesh",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.12.3",
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "typecheck": "tsc -b tsconfig.build.json",
+    "dev:server": "pnpm --filter @mindmesh/server dev",
+    "dev:web": "pnpm --filter @mindmesh/web dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.13.4"
+  }
+}
